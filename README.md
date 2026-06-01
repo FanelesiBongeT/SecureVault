@@ -15,6 +15,9 @@ TECHNOLOGIES: C#, Microsoft SQL Server, ASP.NET core web API, BCrypt password ha
 5. ADMINISTRATION- viewing users, viewing audit logs, monitoring activity. Tables: Users & AuditLogs
 
 EXPECTED OUTCOME: The completed system will demonstrate secure software development practices and provide a practical example of how cybersecurity principles can be integrated into modern applications. 
+
+TABLES: 
+
 ```mermaid
 erDiagram
 
@@ -34,6 +37,30 @@ erDiagram
         int UserID
         string FileName
     }
+
+ARCHITECTURE:
+
+---
+
+# 4. Add System Architecture Diagram (Mermaid version)
+
+This is VERY good for interviews:
+
+````markdown
+```mermaid
+flowchart TD
+
+A[User Interface - C# UI] --> B[ASP.NET Core API]
+B --> C[Authentication Service]
+B --> D[File Service]
+B --> E[Audit Logging Service]
+
+C --> F[(SQL Server Database)]
+D --> F
+E --> F
+
+D --> G[Encrypted File Storage]
+```
 
     AUDITLOGS {
         int LogID
