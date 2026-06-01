@@ -62,5 +62,15 @@ E --> F
 
 D --> G[Encrypted File Storage]
 ```
+## Project Structure (Planned)
 
+SecureVault/
+│
+├── SecureVault.API/        (Backend - ASP.NET Core)
+├── SecureVault.UI/         (Frontend - C#)
+├── SecureVault.Core/       (Business Logic)
+├── SecureVault.Data/       (Database Layer)
+├── SecureVault.Database/   (SQL Scripts)
+├── docs/                   (Diagrams & Documentation)
+└── README.md
 
