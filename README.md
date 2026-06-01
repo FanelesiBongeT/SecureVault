@@ -16,7 +16,7 @@ TECHNOLOGIES: C#, Microsoft SQL Server, ASP.NET core web API, BCrypt password ha
 
 EXPECTED OUTCOME: The completed system will demonstrate secure software development practices and provide a practical example of how cybersecurity principles can be integrated into modern applications. 
 
-
+## Entity Relationship Diagram
 
 ```mermaid
 erDiagram
@@ -38,10 +38,16 @@ erDiagram
         string FileName
     }
 
+    AUDITLOGS {
+        int LogID
+        int UserID
+        string ActionType
+        string ActionDate
+    }
+```
 
+## System Architecture
 
-
-````markdown
 ```mermaid
 flowchart TD
 
@@ -57,9 +63,4 @@ E --> F
 D --> G[Encrypted File Storage]
 ```
 
-    AUDITLOGS {
-        int LogID
-        int UserID
-        string ActionType
-    }
-```
+
