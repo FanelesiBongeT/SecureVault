@@ -40,11 +40,6 @@ erDiagram
 
 
 
----
-
-# 4. Add System Architecture Diagram (Mermaid version)
-
-This is VERY good for interviews:
 
 ````markdown
 ```mermaid
