@@ -15,3 +15,29 @@ TECHNOLOGIES: C#, Microsoft SQL Server, ASP.NET core web API, BCrypt password ha
 5. ADMINISTRATION- viewing users, viewing audit logs, monitoring activity. Tables: Users & AuditLogs
 
 EXPECTED OUTCOME: The completed system will demonstrate secure software development practices and provide a practical example of how cybersecurity principles can be integrated into modern applications. 
+```mermaid
+erDiagram
+
+    USERS ||--o{ FILES : uploads
+    USERS ||--o{ AUDITLOGS : generates
+
+    USERS {
+        int UserID
+        string FullName
+        string Email
+        string PasswordHash
+        string Role
+    }
+
+    FILES {
+        int FileID
+        int UserID
+        string FileName
+    }
+
+    AUDITLOGS {
+        int LogID
+        int UserID
+        string ActionType
+    }
+```
