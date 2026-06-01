@@ -74,3 +74,10 @@ SecureVault/
 ├── docs/                   (Diagrams & Documentation)
 └── README.md
 
+## Future Improvements
+
+- JWT authentication for secure sessions
+- Two-factor authentication (2FA)
+- File integrity verification (hash checking)
+- Real-time security monitoring dashboard
+- Cloud deployment (Azure / AWS)
